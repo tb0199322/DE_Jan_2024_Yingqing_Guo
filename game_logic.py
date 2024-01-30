@@ -9,7 +9,7 @@ def add_random_tile(board):
     empty_cells = [(i, j) for i in range(4) for j in range(4) if board[i][j] == 0]
     if empty_cells:
         i, j = random.choice(empty_cells)
-        board[i][j] = 2 if random.random() < 0.9 else 4
+        board[i][j] = 2
 
 def display_board(board):
     for row in board:
